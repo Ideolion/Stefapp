@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "815917798522",
+    "project_id": "stefapp-6ff6b",
+    "storage_bucket": "stefapp-6ff6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815917798522:android:1f697dbc7f0335fe9597c3",
+        "android_client_info": {
+          "package_name": "com.example.stefapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815917798522-ums4gj926qdksuptt10ahci0pcrkp16p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stefapp",
+            "certificate_hash": "c0ec289221e80f019b72a45ea74c08f1145a28ac"
+          }
+        },
+        {
+          "client_id": "815917798522-rikf9cij04hjf3oppa6fgcispomc7hap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSXz7H5kq2SXGwQCdA98BC1nVo7S0lipw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815917798522-rikf9cij04hjf3oppa6fgcispomc7hap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
