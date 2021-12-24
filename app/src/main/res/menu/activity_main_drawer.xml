@@ -5,16 +5,52 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/detox"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/menu_detox"
+            />
+
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/prot1"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="@string/menu_protection1" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/prot2"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_protection2" />
+        <item
+            android:id="@+id/prot3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_protection3" />
+        <item
+            android:id="@+id/meditation"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_meditation" />
+
+
     </group>
-</menu>
+</group>
+<group android:id="@+id/other">
+<item
+    android:id="@+id/favoriteVideo"
+    android:icon="@drawable/tsig"
+    android:title="Избранное видео" />
+<item
+    android:id="@+id/favoriteAudio"
+    android:icon="@drawable/lotos"
+    android:title="Избранное аудио" />
+</group>
+
+<group android:id="@+id/andOther">
+<item
+    android:id="@+id/mm_6"
+    android:onClick="Instagram"
+    android:title="@string/instagram" />
+<item
+    android:id="@+id/mm_7"
+    android:onClick="MailUs"
+
+    android:title="Mail us" />
+</group>
+
+    </menu>

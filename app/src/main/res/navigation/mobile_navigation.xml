@@ -3,23 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/detox">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.stefapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/detox"
+        android:name="com.example.stefapp.ui.Detox.DetoxFragment"
+        android:label="@string/menu_detox"
+        tools:layout="@layout/fragment_detox" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.stefapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/prot1"
+        android:name="com.example.stefapp.ui.Prot1.Prot1Fragment"
+        android:label="@string/menu_protection1"
+        tools:layout="@layout/fragment_prot1" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.stefapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/prot2"
+        android:name="com.example.stefapp.ui.Prot2.Prot2Fragment"
+        android:label="@string/menu_protection2"
+        tools:layout="@layout/fragment_prot2" />
+    <fragment
+        android:id="@+id/prot3"
+        android:name="com.example.stefapp.ui.Prot3.Prot3Fragment"
+        android:label="@string/menu_protection3"
+        tools:layout="@layout/fragment_prot3" />
+    <fragment
+        android:id="@+id/meditation"
+        android:name="com.example.stefapp.ui.Meditation.Meditation"
+        android:label="@string/menu_meditation"
+        tools:layout="@layout/fragment_meditation" />
+
 </navigation>
