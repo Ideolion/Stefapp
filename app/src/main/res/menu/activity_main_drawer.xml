@@ -7,8 +7,7 @@
         <item
             android:id="@+id/detox"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_detox"
-            />
+            android:title="@string/menu_detox" />
 
         <item
             android:id="@+id/prot1"
@@ -29,28 +28,23 @@
 
 
     </group>
-</group>
-<group android:id="@+id/other">
-<item
-    android:id="@+id/favoriteVideo"
-    android:icon="@drawable/tsig"
-    android:title="Избранное видео" />
-<item
-    android:id="@+id/favoriteAudio"
-    android:icon="@drawable/lotos"
-    android:title="Избранное аудио" />
-</group>
 
-<group android:id="@+id/andOther">
-<item
-    android:id="@+id/mm_6"
-    android:onClick="Instagram"
-    android:title="@string/instagram" />
-<item
-    android:id="@+id/mm_7"
-    android:onClick="MailUs"
+    <group android:id="@+id/other">
+           <item
+            android:id="@+id/favoriteAudio"
+            android:icon="@android:drawable/btn_star"
+            android:title="Избранные записи" />
+    </group>
 
-    android:title="Mail us" />
-</group>
+    <group android:id="@+id/andOther">
+        <item
+            android:id="@+id/mm_6"
+            android:onClick="Instagram"
+            android:title="Instagram" />
+        <item
+            android:id="@+id/mm_7"
+            android:onClick="MailUs"
+            android:title="Mail us" />
+    </group>
 
-    </menu>
+</menu>
