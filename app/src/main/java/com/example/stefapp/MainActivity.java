@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void MailUs(MenuItem item) {
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "app.ashram@gmail.com", null));
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Письмо от пользователя steff_app");
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Письмо от пользователя stef_app");
         startActivity(Intent.createChooser(emailIntent, "Написать письмо..."));
 
 
