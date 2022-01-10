@@ -1,5 +1,4 @@
 package com.example.stefapp.addAudio;
-
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
@@ -13,11 +12,9 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.stefapp.MainActivity;
 import com.example.stefapp.R;
 import com.google.android.gms.tasks.Continuation;
@@ -52,7 +49,6 @@ public class Add_audio extends AppCompatActivity {
         setContentView(R.layout.activity_add_audio);
         textViewAudioName = findViewById(R.id.textViewAudioName);
         editTextAudioName = findViewById(R.id.editTextAudioName);
-
         progressBar= findViewById(R.id.progressBarAudioAdd);
         sTopic = findViewById(R.id.spinnerTopic);
         sChapter = findViewById(R.id.spinner_chapter);
@@ -78,7 +74,6 @@ public class Add_audio extends AppCompatActivity {
         if (requestCode == PICK_AUDIO || resultCode == RESULT_OK ||
                 data != null || data.getData() != null) {
             audioURI = data.getData();
-        //    metadataRetriever.setDataSource(this,audioURI);
             String audioName = getFileName(audioURI);
             textViewAudioName.setText(audioName);
 
@@ -86,31 +81,6 @@ public class Add_audio extends AppCompatActivity {
         }
 
     }
-//
-//    ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
-//            new ActivityResultContracts.StartActivityForResult(),
-//            new ActivityResultCallback<ActivityResult>() {
-//                @Override
-//                public void onActivityResult(ActivityResult result) {
-//                    if (result.getResultCode() == Activity.RESULT_OK ||
-//                            result.getResultCode() == PICK_AUDIO ||
-//                            result.getData() != null
-//                ) {
-//                        Intent data = result.getData();
-//                        audioURI = data.getData();
-//                       // metadataRetriever.setDataSource(data, audioURI);
-//                        String audioName = getFileName(audioURI);
-//                        textViewAudioName.setText(audioName);
-//                    }
-//                }
-//            });
-//
-//    public void openSomeActivityForResult() {
-//        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-//        intent.setType("audio/*");
-//        someActivityResultLauncher.launch(intent);
-//    }
-
 
     private String getFileName(Uri uri) {
         String result = null;
@@ -200,8 +170,6 @@ private void uploadFiles()  {
                                         Toast.makeText(Add_audio.this, "Данные загружены", Toast.LENGTH_SHORT).show();
                                             editTextAudioName.setText("");
                                             textViewAudioName.setText("");
-
-
                                         }
                                     })
                                     .addOnFailureListener(new OnFailureListener() {
@@ -227,8 +195,6 @@ private void uploadFiles()  {
         MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
         return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
     }
-
-
 
     public void back(View view) {
         Intent i = new Intent(Add_audio.this, MainActivity.class);
