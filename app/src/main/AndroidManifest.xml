@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Stefapp">
-        <activity android:name=".Add_audio"
+        <activity android:name=".addAudio.Add_audio"
             android:theme="@style/Theme.Stefapp.NoActionBar"/>
         <activity android:name=".SplashActivity"
             android:theme="@style/Theme.Stefapp.NoActionBar">

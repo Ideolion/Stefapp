@@ -14,6 +14,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.stefapp.addAudio.Add_audio;
 import com.example.stefapp.databinding.ActivityMainBinding;
 import com.example.stefapp.login.LogActivity;
 import com.google.android.material.navigation.NavigationView;
