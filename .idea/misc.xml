@@ -7,7 +7,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Stefapp/app/src/main/res/layout/activity_add_audio.xml" value="0.33" />
-        <entry key="..\:/Stefapp/app/src/main/res/layout/fragment_detox.xml" value="0.1933876811594203" />
+        <entry key="..\:/Stefapp/app/src/main/res/layout/audio_item.xml" value="0.33697916666666666" />
+        <entry key="..\:/Stefapp/app/src/main/res/layout/fragment_detox.xml" value="0.33" />
       </map>
     </option>
   </component>
