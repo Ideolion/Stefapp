@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="5dp"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    >
+
+
+    <ImageView
+        android:id="@+id/icPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_play_black" />
+
+    <TextView
+        android:id="@+id/textViewAudioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/icPlay"
+        android:paddingEnd="50dp"
+        android:text="title"
+        android:textSize="20dp"
+        android:layout_toEndOf="@+id/icPlay"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
