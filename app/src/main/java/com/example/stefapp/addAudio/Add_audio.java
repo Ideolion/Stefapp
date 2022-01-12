@@ -2,7 +2,6 @@ package com.example.stefapp.addAudio;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
-import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.OpenableColumns;
@@ -12,9 +11,11 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.stefapp.MainActivity;
 import com.example.stefapp.R;
 import com.google.android.gms.tasks.Continuation;
@@ -34,7 +35,7 @@ public class Add_audio extends AppCompatActivity {
     TextView textViewAudioName, editTextAudioName;
     ProgressBar progressBar;
     Uri audioURI;
-    MediaMetadataRetriever metadataRetriever;
+  //  MediaMetadataRetriever metadataRetriever;
     FirebaseFirestore db;
     StorageReference storageReference;
     UploadTask uploadTask;
@@ -52,7 +53,7 @@ public class Add_audio extends AppCompatActivity {
         progressBar= findViewById(R.id.progressBarAudioAdd);
         sTopic = findViewById(R.id.spinnerTopic);
         sChapter = findViewById(R.id.spinner_chapter);
-        metadataRetriever = new MediaMetadataRetriever();
+      //  metadataRetriever = new MediaMetadataRetriever();
         storageReference = FirebaseStorage.getInstance().getReference("audio");
         db = FirebaseFirestore.getInstance();
         audioProperties = new AudioProperties();

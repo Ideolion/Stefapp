@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     defaultConfig {
 
 
         applicationId "com.example.stefapp"
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdkVersion 20
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -53,12 +53,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    implementation 'com.google.android.exoplayer:exoplayer:2.10.8'
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.8'
-    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.8'
-    implementation 'com.google.android.exoplayer:exoplayer-hls:2.10.8'
-    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.10.8'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.8'
+    implementation 'com.google.android.exoplayer:exoplayer:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.16.1'
     implementation 'com.google.firebase:firebase-storage:20.0.0'
     implementation 'com.github.jeancsanchez:JcPlayer:2.7.0'
 
